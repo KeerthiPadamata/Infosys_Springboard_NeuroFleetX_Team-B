@@ -34,8 +34,8 @@ public class VehicleHealthService {
             old.setLastChecked(LocalDate.now());
             return repo.save(old);
         }
-
         vh.setLastChecked(LocalDate.now());
         return repo.save(vh);
     }
 }
+
