@@ -12,7 +12,6 @@ public class VehicleHealth {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private Long vehicleId;
     private String vehicleName;
     private String email;
@@ -25,3 +24,4 @@ public class VehicleHealth {
     private String status;
     private LocalDate lastChecked;
 }
+
