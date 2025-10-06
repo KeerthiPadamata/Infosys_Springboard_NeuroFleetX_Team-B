@@ -20,7 +20,7 @@ public class OpenAiService {
 
     public String summarizeRoute(String source, String destination, double distanceKm, double durationMin) {
         if (openAiApiKey == null || openAiApiKey.isBlank()) {
-            return "";
+            return "" ;
         }
 
         try {
@@ -62,3 +62,4 @@ public class OpenAiService {
         }
     }
 }
+
