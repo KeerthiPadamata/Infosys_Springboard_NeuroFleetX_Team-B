@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "vehicles")
 public class Vehicle {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -36,3 +35,4 @@ public class Vehicle {
     public User getUser() { return user; }
     public void setUser(User user) { this.user = user; }
 }
+
