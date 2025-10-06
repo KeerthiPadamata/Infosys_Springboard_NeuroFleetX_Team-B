@@ -68,7 +68,7 @@ public class RouteOptimizationService {
                     new Coordinate(request.getSourceLat(), request.getSourceLng()),
                     new Coordinate(request.getDestinationLat(), request.getDestinationLng())
             );
-            double latDiff = request.getDestinationLat() - request.getSourceLat();
+            double latDiff = request.getDestinationLat()- request.getSourceLat();
             double lngDiff = request.getDestinationLng() - request.getSourceLng();
             double distance = Math.sqrt(latDiff * latDiff + lngDiff * lngDiff) * 111;
             double duration = distance / 50 * 60;
@@ -77,3 +77,4 @@ public class RouteOptimizationService {
         }
     }
 }
+
