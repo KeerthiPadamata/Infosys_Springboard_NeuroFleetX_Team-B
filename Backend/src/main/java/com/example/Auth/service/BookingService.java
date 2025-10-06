@@ -13,7 +13,6 @@ import java.util.List;
 
 @Service
 public class BookingService {
-
     @Autowired
     private JavaMailSender mailSender;
 
@@ -78,3 +77,4 @@ public class BookingService {
         }
     }
 }
+
