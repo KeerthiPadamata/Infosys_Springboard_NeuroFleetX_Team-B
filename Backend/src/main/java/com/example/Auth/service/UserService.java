@@ -22,7 +22,8 @@ public class UserService {
     }
 
     public boolean login(String email, String password) {
-        Optional<User> user = repo.findByEmail(email);
+        Optional<User> user= repo.findByEmail(email);
         return user.isPresent() && encoder.matches(password, user.get().getPassword());
     }
 }
+
